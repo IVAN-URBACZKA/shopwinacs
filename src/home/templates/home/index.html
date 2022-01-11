@@ -1,18 +1,26 @@
-{% extends 'base.html' %}
+{% load static tailwind_tags %}
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+	<head>
+    <title>Django Tailwind</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
 
-{% block content %}
+	<body class="bg-grey-lightest font-serif leading-normal tracking-normal">
+		<div class="container mx-auto">
+			<section class="flex items-center justify-center h-screen">
 
-<h1 class="text-3xl font-bold text-green-400">HOME</h1>
-<h2 class="text-3xl font-bold text-cyan-500">NJFZENOEOKRF</h2>
+                <div class="text-green-300">Text</div>
 
-{% endblock %}
+				                <div class="text-green-300">Text</div>
+                <div class="text-green-300">Text</div>
 
 
-</body>
+				<h1 class="text-5xl">Django + Tikoailwind = ❤️</h1>
+			</section>
+		</div>
+	</body>
 </html>
